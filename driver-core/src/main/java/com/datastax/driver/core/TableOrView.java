@@ -26,7 +26,7 @@ import com.google.common.collect.Iterables;
 /**
  * Base class for Tables and Materialized Views.
  */
-abstract class TableOrView {
+public abstract class TableOrView {
 
     static final Comparator<ColumnMetadata> columnMetadataComparator = new Comparator<ColumnMetadata>() {
         public int compare(ColumnMetadata c1, ColumnMetadata c2) {
