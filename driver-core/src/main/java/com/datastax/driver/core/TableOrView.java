@@ -80,13 +80,6 @@ public abstract class TableOrView {
         this.cassandraVersion = cassandraVersion;
     }
 
-    protected static <T> List<T> nullInitializedList(int size) {
-        List<T> l = new ArrayList<T>(size);
-        for (int i = 0; i < size; ++i)
-            l.add(null);
-        return l;
-    }
-
     /**
      * Returns the name of this table.
      *
